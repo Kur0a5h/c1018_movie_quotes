@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import auth from '../hoc/auth';
 
-export default class extends Component{
+class MovieQuote extends Component{
     render(){
         return(
             <div className="center">
@@ -11,3 +12,4 @@ export default class extends Component{
     }
 }
 
+export default auth(MovieQuote);
